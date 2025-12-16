@@ -171,3 +171,32 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+/* Reveal animation */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Canvas background */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#network-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
