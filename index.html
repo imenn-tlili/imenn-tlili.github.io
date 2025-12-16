@@ -2,66 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Imen Tlili | Electrical Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Rania Aboussaboun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-content">
-    <h1>Hello, I'm Imen Tlili</h1>
-    <h2>Electrical Engineer | Embedded & Biomedical Systems</h2>
-
-    <p>
-      Graduated Electrical Engineer with interests in embedded systems,
-      biomedical instrumentation, and intelligent electronic systems.
-      I am currently seeking international job opportunities.
-    </p>
-
-    <div class="buttons">
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-
-    <div class="socials">
-      <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">LinkedIn</a>
-      <a href="https://github.com/imenn-tlili" target="_blank">GitHub</a>
-      <a href="mailto:your@email.com">Email</a>
-    </div>
-  </div>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Rania Aboussaboun</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section id="about">
-  <h2>About</h2>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hello, I'm <span>Rania Aboussaboun</span></h1>
+
+    <h2>
+      Data Science Engineer Specialist In Trading Strategies |
+      Financial Market Analyst | Day and Swing Trader
+    </h2>
+
+    <p>
+      I am looking for job opportunities in the field of financial markets,
+      and quantitative analysis. Particularly roles related to trading,
+      financial market analysis, and the development of trading strategies.
+    </p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+
+    <div class="socials">
+      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-kaggle"></i>
+      <i class="fa-brands fa-github"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h3>About Me</h3>
   <p>
-    I hold an Electrical Engineering degree from ENIT.
-    My work focuses on hardware–software integration,
-    sensor-based systems, and embedded programming.
+    I am a Data Science Engineer with a strong interest in trading strategies,
+    financial markets. I trade mainly forex, crypto and metal. I specialize
+    in developing algorithmic trading strategies and using machine learning
+    for forecasting market trends.
+    <br><br>
+    I am highly motivated by the ever-evolving nature of the financial world,
+    and I love to keep up with the latest market dynamics and insights.
+    <br><br>
+    I am open to relocation depending on the project, as I am eager to take
+    on exciting opportunities that challenge me and allow me to grow
+    professionally.
   </p>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Embedded Systems (STM32, ESP32)</li>
-    <li>C / Python / MATLAB</li>
-    <li>PCB Design & Electronics</li>
-    <li>Biomedical Sensors</li>
-  </ul>
+<!-- EXPERIENCE -->
+<section class="section">
+  <h3 class="center-title">Professional Experience</h3>
+
+  <div class="experience-card">
+    <h4>Data Science Engineer</h4>
+    <span>Dione Protocol – Newark, Delaware, US</span>
+    <span class="date">09/2024 – 03/2025</span>
+
+    <ul>
+      <li>Developed ML trading strategies for EU carbon market</li>
+      <li>Backtested statistical arbitrage and momentum strategies</li>
+      <li>Built trading bot achieving 61% accuracy</li>
+      <li>Created predictive time-series models</li>
+      <li>Used sentiment analysis for price direction prediction</li>
+    </ul>
+  </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <p>
-    Portable biomedical monitoring system (ECG & SpO₂),
-    embedded systems projects, and robotics applications.
-  </p>
+<!-- PROJECTS -->
+<section id="projects" class="section center">
+  <h3>Projects</h3>
+  <p>Check out my projects on GitHub</p>
+  <a href="#" class="btn-outline">GitHub</a>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h3 class="center-title">Contact Me</h3>
+
+  <div class="contact-wrapper">
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    <p><i class="fa-solid fa-envelope"></i> Gmail</p>
+    <p><i class="fa-brands fa-linkedin"></i> LinkedIn</p>
+  </div>
+
+  <div class="footer-right">
+    <p><i class="fa-solid fa-location-dot"></i> Agadir, Morocco</p>
+    <p><i class="fa-solid fa-phone"></i> (+216) 24552282</p>
+  </div>
+</footer>
 
 </body>
 </html>
