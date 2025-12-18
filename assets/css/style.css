@@ -663,6 +663,7 @@ header .navbar ul li a:hover {
   color: rgb(194, 175, 7);
 }
 
+/* ===== LAYOUT FIX ===== */
 .experience-container {
   display: flex;
   flex-wrap: wrap;
@@ -670,11 +671,13 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 
+/* 3 cards per row (desktop) */
 .experience-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  flex: 1 1 30rem;
+  flex: 0 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
   padding: 2rem;
   color: #fff;
   position: relative;
@@ -716,45 +719,52 @@ header .navbar ul li a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive */
-@media screen and (max-width: 900px) {
-  .experience-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* ===== TABLET (2 cards per row) ===== */
+@media screen and (max-width: 1100px) {
   .experience-card {
-    width: 100%;
+    flex: 0 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
   }
 }
 
+/* ===== MOBILE (1 card per row) ===== */
 @media screen and (max-width: 600px) {
+  .experience-card {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
   .experience h2.heading {
     font-size: 2.2rem;
   }
+
   .experience-card h3 {
     font-size: 1.7rem;
   }
+
   .experience-card h4 {
     font-size: 1.3rem;
   }
+
   .experience-card ul li {
     font-size: 1.2rem;
   }
 }
+
 /* wrapper for logo + job title */
 .position-title {
   display: flex;
   align-items: center;
-  gap: 1rem; /* space between logo and title */
+  gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
 /* company logo */
 .company-logo {
-  width: 142px;      /* adjust size as needed */
+  width: 142px;
   height: 80px;
   object-fit: contain;
-  border-radius: 0.5rem; /* optional: rounded edges */
+  border-radius: 0.5rem;
 }
 
 /* experience section ends */
