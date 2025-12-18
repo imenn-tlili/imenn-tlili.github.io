@@ -741,6 +741,22 @@ header .navbar ul li a:hover {
     font-size: 1.2rem;
   }
 }
+/* wrapper for logo + job title */
+.position-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between logo and title */
+  margin-bottom: 0.5rem;
+}
+
+/* company logo */
+.company-logo {
+  width: 40px;      /* adjust size as needed */
+  height: 40px;
+  object-fit: contain;
+  border-radius: 0.5rem; /* optional: rounded edges */
+}
+
 /* experience section ends */
 
 
