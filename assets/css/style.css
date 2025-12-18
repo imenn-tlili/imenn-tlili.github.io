@@ -751,8 +751,8 @@ header .navbar ul li a:hover {
 
 /* company logo */
 .company-logo {
-  width: 71px;      /* adjust size as needed */
-  height: 40px;
+  width: 142px;      /* adjust size as needed */
+  height: 80px;
   object-fit: contain;
   border-radius: 0.5rem; /* optional: rounded edges */
 }
