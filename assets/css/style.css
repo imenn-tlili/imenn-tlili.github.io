@@ -719,30 +719,38 @@ header .navbar ul li a:hover {
 }
 
 /* Responsive */
-@media screen and (max-width: 900px) {
-  .experience-container {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Tablets → 2 per row */
+@media screen and (max-width: 1100px) {
   .experience-card {
-    width: 100%;
+    flex: 0 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
   }
 }
 
+/* Mobile → 1 per row */
 @media screen and (max-width: 600px) {
+  .experience-card {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
   .experience h2.heading {
     font-size: 2.2rem;
   }
+
   .experience-card h3 {
     font-size: 1.7rem;
   }
+
   .experience-card h4 {
     font-size: 1.3rem;
   }
+
   .experience-card ul li {
     font-size: 1.2rem;
   }
 }
+
 
 /* wrapper for logo + job title */
 .position-title {
