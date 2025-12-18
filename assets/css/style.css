@@ -646,126 +646,103 @@ header .navbar ul li a:hover {
 /* education media queries ends*/
 /* education section ends */
 
-/* work section starts */
-.work {
-  /* background: #010124; */
+/* experience section starts */
+.experience {
   background: linear-gradient(to bottom, #000031, #00002c);
+  padding: 4rem 2rem;
 }
-.work h2 {
+
+.experience h2.heading {
   color: #fff;
-  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
-.work .heading span {
+
+.experience h2.heading span {
   color: rgb(194, 175, 7);
 }
-.work .box-container {
+
+.experience-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 2rem;
+  gap: 2rem;
+  justify-content: center;
 }
-.work .box-container .box {
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
   flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  height: 30rem;
-}
-.work .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.work .box-container .box .content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 85%;
-  left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-}
-.work .box-container .box .content .tag {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 4.5rem;
-  width: 100%;
-  padding-left: 1rem;
-  background: #da0416;
-  color: #FFF;
-}
-.work .box-container .box .content .tag h3 {
-  font-size: 2rem;
-}
-.work .box-container .box:hover .content {
-  top: 25%;
-}
-.work .desc {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.work .desc p {
-  font-size: 1.5rem;
-}
-.work .desc .btns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 2rem;
-}
-.work .desc .btns .btn {
-  line-height: 0;
-  display: inline;
-  padding: 1.5rem 2.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
+  padding: 2rem;
   color: #fff;
-  background: rgb(12, 12, 12);
-  margin-right: 2rem;
-}
-.work .desc .btns .btn:hover {
-  background: #da0416;
-}
-.work .viewall {
-  display: flex;
-  justify-content: center;
-}
-.work .viewall .btn {
   position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 0.5em;
-  transition: 0.5s;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
-  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.work .viewall .btn span {
-  font-weight: 600;
-  font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
-.work .viewall .btn i {
-  margin-left: 0.3rem;
+
+.experience-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(194, 175, 7);
+}
+
+.experience-card h4 {
   font-size: 1.5rem;
-  transition: 0.3s;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #fff;
 }
-.work .viewall .btn:hover {
-  background: #fff;
-  color: #000;
+
+.experience-card .date {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+  display: block;
 }
-.work .viewall .btn:hover i {
-  transform: translateX(5px);
+
+.experience-card ul {
+  list-style: disc inside;
+  line-height: 2;
 }
-/* work section ends */
+
+.experience-card ul li {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience h2.heading {
+    font-size: 2.2rem;
+  }
+  .experience-card h3 {
+    font-size: 1.7rem;
+  }
+  .experience-card h4 {
+    font-size: 1.3rem;
+  }
+  .experience-card ul li {
+    font-size: 1.2rem;
+  }
+}
+/* experience section ends */
+
 
 /* experience section starts */
 .experience .timeline {
