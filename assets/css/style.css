@@ -674,12 +674,14 @@ header .navbar ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  flex: 1 1 30rem;
+  flex: 0 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
   padding: 2rem;
   color: #fff;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .experience-card:hover {
   transform: translateY(-10px);
